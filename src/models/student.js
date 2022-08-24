@@ -15,7 +15,12 @@ const student_schema=new mongoose.Schema({
         required:true,
         minlength:6
     },
-    courses:[String]
+    
+    courses:[String],
+    cgpa:{
+        type:String,
+    }
+
 
 
 
