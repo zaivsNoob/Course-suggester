@@ -6,4 +6,4 @@ const obj = {
 
 const courses=["cse110","eng101"]
 
-console.log(obj.power1.filter((item)=>item!==courses[0]))
+console.log(obj.power1.filter((item)=>item!==courses[1]))

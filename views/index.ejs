@@ -9,18 +9,33 @@
 <body>
 
    
- <ul>
-     <% for(stu of student){ %>
-        <li><%= stu.student_id%></li>
-        <% }%>
-        
 
-        
- </ul>
 
- <form action="/" method="post">
-     <label for="name">Name</label>
-     <input type="text" id="name" name="name">
- </form>
+ <div class="main">
+     <form action="/form_post" method="POST">
+         <label for="name">Name</label>
+         <input type="text" id="name" name="s_name">
+         
+         <label for="id">ID</label>
+         <input type="text" id="id" name="student_id">
+         
+         <label for="password">Password</label>
+         <input type="text" id="password" name="password">
+         
+
+         <div class="checks">
+            <label for="cse340">cse340</label>
+            <input type="checkbox" id="cse340" name="courses" value="cse340">
+            <label for="cse250">cse250</label>
+            <input type="checkbox" id="cse250" name="courses" value="cse250">
+            <label for="cse330">cse330</label>
+            <input type="checkbox" id="cse330" name="courses" value="cse330">
+            <label for="cse110">cse110</label>
+            <input type="checkbox" id="cse110" name="courses" value="cse110">
+         </div>
+         <button type="submit">submit</button>
+     </form>
+   
+ </div>
 </body>
 </html>
