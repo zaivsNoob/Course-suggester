@@ -33,14 +33,16 @@ router.get("/course_post",async(req,res)=>{
 
 router.get('/:code',async(req,res)=>{
     const code=req.params.code
+    
     try {
         const course=await Course.findOne({course_code:code})
-        // res.render("course",{course:course})
+        console.log(course)
+        res.render("course",{course:course})
 
-        res.send(course)
+       
       
-    } catch (error) {
-        
+    } catch (e) {
+        res.send(e)
     }
 } )
 

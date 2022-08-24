@@ -8,12 +8,19 @@
 <body>
     
         
-     
-        <h2>You are suggested to do 
+    
+
+        <h2><%= student.s_name%> , you are suggested to do 
             <a href="http://localhost:4000/<%= suggest[0]%>" >
-            <%= suggest[0]%></a>  </h2>
+            <%= suggest[0]%></a> 
+            <a href="http://localhost:4000/<%= suggest[1]%>" >
+                <%= suggest[1]%></a> 
+
+                </a>
+                
+        </h2>
         
-       <h2><%= student.s_name%></h2>
+       
 
         
  </ul>

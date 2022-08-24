@@ -29,12 +29,13 @@ exports.studentGetById2 =async(req,res)=>{
            
             const suggestions = {
                 "power1":['eng091','eng101'],
-                "power2":['cse110','cse111','cse444']
+                "power2":['cse110','cse111','eng091','eng101']
                 
             }
 
-            // console.log(student.courses)
+            
             suggested=suggestions.power2.filter((item)=>item!==student.courses[0])
+            console.log(suggested[2])
             // console.log(suggested[0])
             // console.log(suggested[1])
 

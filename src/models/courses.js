@@ -20,6 +20,9 @@ const courses_schema= new mongoose.Schema({
     difficult_level :{
         type:String,
         
+    },
+    faculty:{
+        type:String,
     }
 
 },{
